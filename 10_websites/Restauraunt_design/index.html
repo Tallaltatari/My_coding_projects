@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Restaurant Design </title>
+        <script src="script.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: "Roboto", "sans-seriff";
+                margin: 0;
+            }
+
+            header {
+                background-image: url(bg.png);
+                background-size: cover;
+                background-position: center center;
+                min-height: 100vh;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .container {
+                width: 1000px;
+                max-width: 100%;
+                padding: 1rem;
+                margin: 0 auto;
+            }
+
+            nav {
+                padding: 0.5rem 0;
+            }
+
+            .pre-nav {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                align-items: center;
+            }
+
+            .logo {
+                color: #026E78;
+                font-weight: bold;
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            nav li {
+                flex: 1 auto;
+            }
+
+            nav li a {
+                background-color: #2D99A4;
+                padding: 1rem 2rem;
+                display: block;
+                text-align: center;
+            }
+            
+            nav a.active {
+                background-color: #fff;
+                color: #026E78;
+                font-weight: bold;
+            }
+
+            nav a.highlight {
+                background-color: #026E78;
+                color: #fff;
+            }
+
+            nav a:hover {
+                opacity: 0.8;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 5rem;
+                font-size: 1.5rem;
+            }
+
+            .content h1 {
+                background-color: #026E78;
+                color: white;
+                display: inline-block;
+                padding: 0.5rem;
+                font-weight: 200;
+            }
+
+            .white-link {
+                background-color: #fff;
+                color: #2D99A4;
+                padding: 0.5rem;
+            }
+
+            .teal-link {
+                background-color: #2D99A4;
+                color: #fff;
+                padding: 0.5rem;
+                margin-top: 1rem;
+            }
+
+            @media screen and (max-width: 768px) {
+                .pre-nav {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .content {
+                    font-size: 1rem;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="pre-nav">
+                <a href="#" class="logo">
+                <i class="fas fa-utensils"></i>
+                    Restaurant
+                </a>
+                <a href="#">Call us on 0000000000</a>
+                </nav>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" class="highlight">Book a Table</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1>Try something new</h1>
+                <a href="#" class="white-link">
+                    Book a Table
+                </a>
+                <a href="#" class="teal-link">
+                    View our Menu
+                </a>
+            </div>
+            </div>
+        </header>
+    </body>
+</html>
